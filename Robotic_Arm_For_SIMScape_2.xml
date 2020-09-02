@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="05/05/20||10:14:46" using="Simscape Multibody Link Version 7.0" from="SolidWorks 26.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Robotic_Arm_For_SIMScape" uid="Robotic_Arm_For_SIMScape" version="3189">
+<AssemblyFile name="Robotic_Arm_For_SIMScape.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="BaseNew-1" uid="BaseNew-1" entityUid="BaseNew*:*Default">
+<Transform>
+<Rotation>0.98984316148772122 -0.14216369317091176 1.3939019262192328e-14 0.14216369317091176 0.98984316148772122 -2.8265264193366e-15 -1.3396213475096801e-14 4.7820161274676921e-15 1</Rotation>
+<Translation>9.5151592700960883e-16 6.1976282766693571e-16 0.048599999999999963</Translation>
+</Transform>
+</Instance>
+<Instance name="SupportNew-1" uid="SupportNew-1" grounded="true" entityUid="SupportNew*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Forearm + Gripper without Offset Subassembly -1" uid="Forearm + Gripper without Offset Subassembly -1" entityUid="Forearm + Gripper without Offset Subassembly " rigid="true">
+<Transform>
+<Rotation>0.94720388687466706 0.26818599032475993 0.17573010921026225 0.1690834545492314 0.047873339979039489 -0.98443838238710979 -0.27242536975696835 0.96217691611926504 1.4090313990552244e-15</Rotation>
+<Translation>0.050193073694399168 0.0089598643028704107 0.12027319310689721</Translation>
+</Transform>
+<Instance name="Forearm + Gripper without offset-2" uid="Forearm + Gripper without offset-2" grounded="true" entityUid="Forearm + Gripper without offset*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Gripper_with_Trigger-1" uid="Gripper_with_Trigger-1" entityUid="Gripper_with_Trigger*:*Default">
+<Transform>
+<Rotation>-0.94219114717651586 0.30537885001119758 0.13791156640412519 0.16097117090409638 0.051536742682793235 0.98561262486405476 0.29387773702675263 0.95083527601761064 -0.097714653765690787</Rotation>
+<Translation>0.010571292555713549 -0.066922375547991464 -0.038760648177730631</Translation>
+</Transform>
+</Instance>
+<Instance name="UpperArmNew3-1" uid="UpperArmNew3-1" entityUid="UpperArmNew3*:*Default">
+<Transform>
+<Rotation>0.73979081478267072 -0.64948324003021263 0.17573010921025875 0.1320585655744885 -0.11593794263078001 -0.98443838238711046 0.65975001752300144 0.75148513916004978 9.7709589624619559e-15</Rotation>
+<Translation>-5.8216139658860905e-06 -1.0392028236363732e-06 0.075503464213158025</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper-1" uid="Gripper-1" entityUid="Gripper*:*Default">
+<Transform>
+<Rotation>-0.90218758878061556 0.30550801072885608 0.30450354682780972 0.33300048715134406 0.044600352692469404 0.94187126726356574 0.27416825163973041 0.95114439698723163 -0.14197220105573108</Rotation>
+<Translation>-0.0056065069150014902 -0.060409448080382802 -0.037469286106324134</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>SupportNew-1</Uid>
+</InstancePath>
+<Position>1.474514954580286e-16 0 0.043400000000000008</Position>
+<Axis>0 1.1312405646254061e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BaseNew-1</Uid>
+</InstancePath>
+<Position>-8.6736101797017793e-16 -4.996034520689556e-16 -0.001199999999999965</Position>
+<Axis>1.3426564858557132e-14 -4.9006600963322333e-15 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SupportNew-1</Uid>
+</InstancePath>
+<Position>0 0 0.047400000000000012</Position>
+<Axis>0 1.1312405646254061e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BaseNew-1</Uid>
+</InstancePath>
+<Position>-8.6736101797017793e-16 -4.996034520689556e-16 -0.001199999999999965</Position>
+<Axis>1.3426564858557132e-14 -4.9006600963322333e-15 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric12">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Forearm + Gripper without Offset Subassembly -1</Uid>
+<Uid>Forearm + Gripper without offset-2</Uid>
+</InstancePath>
+<Position>0.098423531202014469 0.015281814966859097 0.0039231513405608058</Position>
+<Axis>-1.7930101847696278e-14 1 2.5939224944083414e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Gripper_with_Trigger-1</Uid>
+</InstancePath>
+<Position>-0.072794916112102176 0.16829202012819033 0.092910265278745768</Position>
+<Axis>0.037786136439287021 0.99923731893438905 -0.0098482659288606361</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident17">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Forearm + Gripper without Offset Subassembly -1</Uid>
+<Uid>Forearm + Gripper without offset-2</Uid>
+</InstancePath>
+<Position>0.086676164324147292 0.0032205895129592266 -0.0084408813356569978</Position>
+<Axis>1.7763568394002505e-14 -1.0000000000000002 -1.9694220430566908e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Gripper_with_Trigger-1</Uid>
+</InstancePath>
+<Position>-0.045406768853172491 0.17336114934130734 0.10308011184008821</Position>
+<Axis>0.037786136439287021 0.99923731893438905 -0.0098482659288606361</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric13">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Forearm + Gripper without Offset Subassembly -1</Uid>
+<Uid>Forearm + Gripper without offset-2</Uid>
+</InstancePath>
+<Position>0.098425286809867743 0.015273570430927336 -0.004717563199792804</Position>
+<Axis>-1.7930101847696278e-14 1 2.5939224944083414e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Gripper-1</Uid>
+</InstancePath>
+<Position>-0.067723762101957088 0.1710744060437665 0.11195219718868055</Position>
+<Axis>0.037786136439286772 0.99923731893438927 -0.0098482659288609553</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident18">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Forearm + Gripper without Offset Subassembly -1</Uid>
+<Uid>Forearm + Gripper without offset-2</Uid>
+</InstancePath>
+<Position>0.086676164324147292 0.0032205895129592266 -0.0084408813356569978</Position>
+<Axis>1.7763568394002505e-14 -1.0000000000000002 -1.9694220430566908e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Gripper-1</Uid>
+</InstancePath>
+<Position>-0.12235032649495876 0.17927584444224953 0.12526061584220904</Position>
+<Axis>0.037786136439286772 0.99923731893438927 -0.0098482659288609553</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric14">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BaseNew-1</Uid>
+</InstancePath>
+<Position>-0.0011897847755479316 0.034979771471350368 0.026908655964177436</Position>
+<Axis>0.033993850729922503 -0.99942204203857332 4.8581289118149143e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>UpperArmNew3-1</Uid>
+</InstancePath>
+<Position>7.8692700000368432e-06 -9.8532293435482643e-16 -0.017042765189999993</Position>
+<Axis>1.1789645824330877e-16 -1.3892372918386331e-14 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident19">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BaseNew-1</Uid>
+</InstancePath>
+<Position>0.0009163802161710541 -0.026941654659813272 0.02690865596418085</Position>
+<Axis>-0.033993850729924835 0.99942204203857321 -4.8581289118170726e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>UpperArmNew3-1</Uid>
+</InstancePath>
+<Position>-4.3469117194661067e-12 -3.6082248300317588e-16 0.026957234810000015</Position>
+<Axis>-5.045294297669299e-16 -1.3350705813114428e-14 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric17">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>UpperArmNew3-1</Uid>
+</InstancePath>
+<Position>0.067857869270000121 -4.9960036108132044e-16 -0.017042765189999934</Position>
+<Axis>1.1789645824330877e-16 -1.3892372918386331e-14 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Forearm + Gripper without Offset Subassembly -1</Uid>
+<Uid>Forearm + Gripper without offset-2</Uid>
+</InstancePath>
+<Position>1.829689297919157e-06 0 -0.02068276519290134</Position>
+<Axis>6.9626424627918515e-15 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident20">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>UpperArmNew3-1</Uid>
+</InstancePath>
+<Position>0.067875738544346947 -1.609823385706477e-15 0.026957234810000008</Position>
+<Axis>-3.2133384502028022e-16 -1.2188251541229068e-14 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Forearm + Gripper without Offset Subassembly -1</Uid>
+<Uid>Forearm + Gripper without offset-2</Uid>
+</InstancePath>
+<Position>1.8296892979052792e-06 -9.9920072216264089e-16 0.026957234807098773</Position>
+<Axis>-8.1308750437635223e-15 8.8313516132973695e-16 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="Forearm + Gripper without Offset Subassembly " uid="Forearm + Gripper without Offset Subassembly " version="234">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Forearm + Gripper without Offset Subassembly .SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="BaseNew" uid="BaseNew*:*Default" version="159">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BaseNew.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.13586286580660575</Mass>
+<CenterOfMass>0.015087709353593645 0.0018011009509000114 -0.0066558832038857013</CenterOfMass>
+<Inertia>0.00018431592782547444 0.00034203851008371194 0.00038637844721994114 -9.7026599860888895e-07 0.00010037402941292958 -3.565754517726124e-06</Inertia>
+</MassProperties>
+<GeometryFile name="BaseNew_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Forearm + Gripper without offset" uid="Forearm + Gripper without offset*:*Default" version="157">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Forearm + Gripper without offset.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.032533907210453739</Mass>
+<CenterOfMass>0.045366711810665754 -4.7431117337003256e-06 0.0030858313465834757</CenterOfMass>
+<Inertia>5.577622413766711e-06 3.1494987841026508e-05 2.7684938089845243e-05 9.7975447368753055e-10 1.0724142181267568e-06 6.4493670097917934e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Forearm + Gripper without offset_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Gripper" uid="Gripper*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Gripper.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0008255605734231097</Mass>
+<CenterOfMass>-0.074654267146757297 0.17422242327937881 0.116012731457608</CenterOfMass>
+<Inertia>1.3435983552348041e-08 6.2688842663952793e-08 5.4899306088224641e-08 -6.5050816066927052e-10 1.520625704760927e-08 2.0131526734735753e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Gripper_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Gripper_with_Trigger" uid="Gripper_with_Trigger*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Gripper_with_Trigger.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00097896984358879593</Mass>
+<CenterOfMass>-0.080295271335910884 0.17132455045612363 0.091318908356450068</CenterOfMass>
+<Inertia>1.7949362302064579e-08 7.1419478902301595e-08 6.0159295817096633e-08 -1.2634520091645185e-09 1.0887746421058377e-08 2.1685071825897303e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Gripper_with_Trigger_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SupportNew" uid="SupportNew*:*Default" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SupportNew.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.43035297654879301</Mass>
+<CenterOfMass>0.0466010282636833 -1.5068893716166623e-09 0.002094408680563617</CenterOfMass>
+<Inertia>0.0030573936319186652 0.0024545997976955832 0.0053453065915120643 2.1075381097638567e-11 0.00011568106562431027 -1.7106858978770541e-11</Inertia>
+</MassProperties>
+<GeometryFile name="SupportNew_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="UpperArmNew3" uid="UpperArmNew3*:*Default" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="UpperArmNew3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.037979490416050331</Mass>
+<CenterOfMass>0.032480424082096837 -6.1079521445257093e-05 0.0034070409444157926</CenterOfMass>
+<Inertia>4.1045645828551925e-06 3.3982566838978669e-05 3.2529613620639516e-05 -4.5231000203816168e-09 -2.4088023308375644e-07 1.0384890288896511e-07</Inertia>
+</MassProperties>
+<GeometryFile name="UpperArmNew3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
